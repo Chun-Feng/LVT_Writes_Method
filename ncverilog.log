@@ -1,0 +1,206 @@
+ncverilog: 11.10-s072: (c) Copyright 1995-2013 Cadence Design Systems, Inc.
+TOOL:	ncverilog	11.10-s072: Started on Sep 15, 2016 at 00:27:29 CST
+ncverilog
+	-y
+	/fpga/Xilinx/14.2/ISE_DS/ISE/verilog/src/unisims
+	-y
+	/fpga/Xilinx/14.2/ISE_DS/ISE/verilog/src/XilinxCoreLib
+	+incdir+/fpga/Xilinx/14.2/ISE_DS/ISE/verilog/src
+	+libext+.v
+	/fpga/Xilinx/14.2/ISE_DS/ISE/verilog/src/glbl.v
+	./blk_mem_gen_v7_2.v
+	./ram_1R1W.v
+	./ram_2R1W.v
+	./TESTBENCH.v
+	+define+RTL
+	+access+rw
+	+notimingchecks
+file: /fpga/Xilinx/14.2/ISE_DS/ISE/verilog/src/glbl.v
+	module worklib.glbl:v
+		errors: 0, warnings: 0
+file: ./blk_mem_gen_v7_2.v
+	module worklib.blk_mem_gen_v7_2:v
+		errors: 0, warnings: 0
+file: ./ram_1R1W.v
+	module worklib.ram_1R1W:v
+		errors: 0, warnings: 0
+file: ./ram_2R1W.v
+	module worklib.ram_2R1W:v
+		errors: 0, warnings: 0
+file: ./TESTBENCH.v
+	module worklib.PATTERN:v
+		errors: 0, warnings: 0
+	module worklib.ram_2R2W:v
+		errors: 0, warnings: 0
+	module worklib.TESTBENCH:v
+		errors: 0, warnings: 0
+file: /fpga/Xilinx/14.2/ISE_DS/ISE/verilog/src/XilinxCoreLib/BLK_MEM_GEN_V7_2.v
+	module XilinxCoreLib.BLK_MEM_GEN_V7_2:v
+		errors: 0, warnings: 0
+file: /fpga/Xilinx/14.2/ISE_DS/ISE/verilog/src/XilinxCoreLib/BLK_MEM_GEN_V7_2.v
+	module XilinxCoreLib.blk_mem_axi_write_wrapper_beh_V7_2:v
+		errors: 0, warnings: 0
+	module XilinxCoreLib.blk_mem_axi_read_wrapper_beh_V7_2:v
+		errors: 0, warnings: 0
+	module XilinxCoreLib.blk_mem_axi_regs_fwd_v7_2:v
+		errors: 0, warnings: 0
+	module XilinxCoreLib.BLK_MEM_GEN_V7_2_mem_module:v
+		errors: 0, warnings: 0
+file: /fpga/Xilinx/14.2/ISE_DS/ISE/verilog/src/XilinxCoreLib/BLK_MEM_GEN_V7_2.v
+	module XilinxCoreLib.write_netlist_V7_2:v
+		errors: 0, warnings: 0
+	module XilinxCoreLib.read_netlist_V7_2:v
+		errors: 0, warnings: 0
+	module XilinxCoreLib.BLK_MEM_GEN_V7_2_output_stage:v
+		errors: 0, warnings: 0
+	module XilinxCoreLib.BLK_MEM_GEN_V7_2_softecc_output_reg_stage:v
+		errors: 0, warnings: 0
+file: /fpga/Xilinx/14.2/ISE_DS/ISE/verilog/src/XilinxCoreLib/BLK_MEM_GEN_V7_2.v
+	module XilinxCoreLib.STATE_LOGIC_V7_2:v
+		errors: 0, warnings: 0
+	module XilinxCoreLib.beh_vlog_muxf7_V7_2:v
+		errors: 0, warnings: 0
+	module XilinxCoreLib.beh_vlog_ff_clr_V7_2:v
+		errors: 0, warnings: 0
+	module XilinxCoreLib.beh_vlog_ff_pre_V7_2:v
+		errors: 0, warnings: 0
+	module XilinxCoreLib.beh_vlog_ff_ce_clr_V7_2:v
+		errors: 0, warnings: 0
+ncvlog: *W,LIBNOU: Library "/fpga/Xilinx/14.2/ISE_DS/ISE/verilog/src/unisims" given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'XilinxCoreLib' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		XilinxCoreLib.BLK_MEM_GEN_V7_2:v <0x49a341de>
+			streams:  14, words:  3201
+		XilinxCoreLib.BLK_MEM_GEN_V7_2_mem_module:v <0x2117739c>
+			streams:  50, words: 28694
+		XilinxCoreLib.BLK_MEM_GEN_V7_2_output_stage:v <0x7d253605>
+			streams:   6, words:  2179
+		XilinxCoreLib.BLK_MEM_GEN_V7_2_softecc_output_reg_stage:v <0x339510f8>
+			streams:   5, words:  1215
+		worklib.PATTERN:v <0x208aefac>
+			streams:   2, words:  9765
+		worklib.TESTBENCH:v <0x2dfb0b9b>
+			streams:   1, words:   346
+		worklib.glbl:v <0x6abb92c6>
+			streams:  11, words:  2627
+		worklib.ram_1R1W:v <0x45659733>
+			streams:   8, words:  1097
+		worklib.ram_2R2W:v <0x27e4edb6>
+			streams:  13, words:  3578
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                 58      21
+		Registers:             1186     202
+		Scalar wires:           563       -
+		Vectored wires:         356       -
+		Always blocks:           56      68
+		Initial blocks:         132      60
+		Cont. assignments:      197      72
+		Pseudo assignments:     138      26
+		Simulation timescale:   1ps
+	Writing initial simulation snapshot: worklib.glbl:v
+Loading snapshot worklib.glbl:v .................... Done
+*Verdi3* Loading libsscore_ius111.so
+*Verdi3* : Enable Parallel Dumping.
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module TESTBENCH.ram.block1.block1.memblock[0].blkmem.inst.native_mem_module.blk_mem_gen_v7_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module TESTBENCH.ram.block1.block1.memblock[1].blkmem.inst.native_mem_module.blk_mem_gen_v7_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module TESTBENCH.ram.block1.block2.memblock[0].blkmem.inst.native_mem_module.blk_mem_gen_v7_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module TESTBENCH.ram.block1.block2.memblock[1].blkmem.inst.native_mem_module.blk_mem_gen_v7_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module TESTBENCH.ram.block2.block1.memblock[0].blkmem.inst.native_mem_module.blk_mem_gen_v7_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module TESTBENCH.ram.block2.block1.memblock[1].blkmem.inst.native_mem_module.blk_mem_gen_v7_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module TESTBENCH.ram.block2.block2.memblock[0].blkmem.inst.native_mem_module.blk_mem_gen_v7_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module TESTBENCH.ram.block2.block2.memblock[1].blkmem.inst.native_mem_module.blk_mem_gen_v7_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Execute :           0 times Correct!!
+Execute :       10000 times Correct!!
+Execute :       20000 times Correct!!
+Execute :       30000 times Correct!!
+Execute :       40000 times Correct!!
+Execute :       50000 times Correct!!
+Execute :       60000 times Correct!!
+Execute :       70000 times Correct!!
+Execute :       80000 times Correct!!
+Execute :       90000 times Correct!!
+Execute :      100000 times Correct!!
+Execute :      110000 times Correct!!
+Execute :      120000 times Correct!!
+Execute :      130000 times Correct!!
+Execute :      140000 times Correct!!
+Execute :      150000 times Correct!!
+Execute :      160000 times Correct!!
+Execute :      170000 times Correct!!
+Execute :      180000 times Correct!!
+Execute :      190000 times Correct!!
+Execute :      200000 times Correct!!
+Execute :      210000 times Correct!!
+Execute :      220000 times Correct!!
+Execute :      230000 times Correct!!
+Execute :      240000 times Correct!!
+Execute :      250000 times Correct!!
+Execute :      260000 times Correct!!
+Execute :      270000 times Correct!!
+Execute :      280000 times Correct!!
+Execute :      290000 times Correct!!
+Execute :      300000 times Correct!!
+Execute :      310000 times Correct!!
+Execute :      320000 times Correct!!
+Execute :      330000 times Correct!!
+Execute :      340000 times Correct!!
+Execute :      350000 times Correct!!
+Execute :      360000 times Correct!!
+Execute :      370000 times Correct!!
+Execute :      380000 times Correct!!
+Execute :      390000 times Correct!!
+Execute :      400000 times Correct!!
+Execute :      410000 times Correct!!
+Execute :      420000 times Correct!!
+Execute :      430000 times Correct!!
+Execute :      440000 times Correct!!
+Execute :      450000 times Correct!!
+Execute :      460000 times Correct!!
+Execute :      470000 times Correct!!
+Execute :      480000 times Correct!!
+Execute :      490000 times Correct!!
+Execute :      500000 times Correct!!
+Execute :      510000 times Correct!!
+Execute :      520000 times Correct!!
+Execute :      530000 times Correct!!
+Execute :      540000 times Correct!!
+Execute :      550000 times Correct!!
+Execute :      560000 times Correct!!
+Execute :      570000 times Correct!!
+Execute :      580000 times Correct!!
+Execute :      590000 times Correct!!
+Execute :      600000 times Correct!!
+Execute :      610000 times Correct!!
+Execute :      620000 times Correct!!
+Execute :      630000 times Correct!!
+Execute :      640000 times Correct!!
+Execute :      650000 times Correct!!
+Execute :      660000 times Correct!!
+Execute :      670000 times Correct!!
+TOOL:	ncverilog	11.10-s072: Exiting on Sep 15, 2016 at 00:42:03 CST  (total: 00:14:34)
