@@ -1,0 +1,26 @@
+#LVT (Live-Value-Table) - based techniques memory designs (verilog .v file)
+////////////////////////////////////////////////////////////
+/////////// PATTERN.v, TESTBENCH.v, ram_mR1W.v, ram_mRnW.v/////
+///////////////////////////////////////////////////////////////
+
+In each file, you could saw "BLOCKSIZE" and "BLOCLSIZE" parameter
+
+(1) BLOCKSIZE means the memory size (2K, 4K, 8K, 16k, 32K ... etc.)
+
+2K_depth_memory: you should set BLOCKSIZE = 10.
+4K_depth_memory: you should set BLOCKSIZE = 11.
+8K_depth_memory: you should set BLOCKSIZE = 12.
+16K_depth_memory: you should set BLOCKSIZE = 13.
+32K_depth_memory: you shoudl set BLOCKSIZE = 14.
+
+////////////////////////////////////////////////////////////
+
+(2) BLOCLSIZE means the address data size.
+
+So, here it's fixed set BLOCLSIZE = 9.
+
+You could don't change this parameter.
+
+////////////////////////////////////////////////////////////
+
+If you have anything question, please send by email to me or leave issue in github.
