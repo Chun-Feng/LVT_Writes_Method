@@ -63,9 +63,12 @@ ram_8R8W ram(
     .w_addr_8(w8_addr), .w_din_8(w8), .w_enb_8(en_w8),
     .r_addr_1(r1_addr), .r_dout_1(d1),
     .r_addr_2(r2_addr), .r_dout_2(d2),
-    .r_addr_2(r2_addr), .r_dout_2(d2),
-    .r_addr_2(r2_addr), .r_dout_2(d2),
-    
+    .r_addr_3(r3_addr), .r_dout_3(d3),
+    .r_addr_4(r4_addr), .r_dout_4(d4),
+    .r_addr_5(r5_addr), .r_dout_5(d5),
+    .r_addr_6(r6_addr), .r_dout_6(d6),
+    .r_addr_7(r7_addr), .r_dout_7(d7),
+    .r_addr_8(r8_addr), .r_dout_8(d8)
     );
 
 endmodule
